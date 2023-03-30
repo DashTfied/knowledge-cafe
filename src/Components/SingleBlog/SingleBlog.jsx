@@ -4,7 +4,7 @@ const SingleBlog = ({blog}) => {
     
     return (
         <div>
-            <div className="card w-full md:w-3/5 lg:w-3/5 bg-base-100 shadow-xl mt-12">
+            <div className="card w-full md:w-3/4 lg:w-3/4 bg-base-100 shadow-xl mt-12">
   <figure><img src={blog.cover_img} alt="Shoes" /></figure>
   <div className="card-body">
     <div>
