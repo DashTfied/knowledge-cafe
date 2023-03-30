@@ -1,4 +1,5 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 
 const SingleBlog = ({blog, handleReadTime, blogCount}) => {
     

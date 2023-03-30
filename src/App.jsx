@@ -6,6 +6,8 @@ import Header from './Components/Header/Header'
 import Blogs from './Components/Blogs/Blogs'
 import SidePannel from './Components/Sidepannel/SidePannel'
 import { useState } from 'react';
+ import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [readingTime, setReadingTime] = useState("");
@@ -14,7 +16,13 @@ function App() {
 
    const blogCount = (blog) =>{
         const newBlog = [...blogInfo, blog]
+        if (newBlog){
+          toast("You Have Already Bookmarked This Blog!")
+          setBlogInfo(newBlog)
+        }
+        else{
         setBlogInfo(newBlog)
+        }
     }
 
 
@@ -40,6 +48,7 @@ function App() {
         </div >
         <div className="side-pannel mx-auto">
 <SidePannel readingTime = {readingTime} blogInfo ={blogInfo}></SidePannel>
+<ToastContainer></ToastContainer>
         </div>
       </div>
     </div>
