@@ -5,7 +5,7 @@
         "blog_title" : "Programming as you career",
         "cover_img" : "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         "author_img" : "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80",
-        "read_time" : "05 min read",
+        "read_time" : 15,
         "published" : "Mar 14 (4 Days ago)"
 
     },
@@ -15,7 +15,7 @@
         "blog_title" : "Learn how to creat fake data when needed!",
         "cover_img" : "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         "author_img" : "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        "read_time" : "10 min read",
+        "read_time" : 10,
         "published" : "Mar 14 (4 Days ago)"
 
     },
@@ -25,7 +25,7 @@
         "blog_title" : "How to get your first job as a self-taught programmer",
         "cover_img" : "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         "author_img" : "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
-        "read_time" : "12 min read",
+        "read_time" : 12,
         "published" : "Mar 14 (4 Days ago)"
 
     },
@@ -35,7 +35,7 @@
         "blog_title" : "Is ChatGPT going to steal you job?",
         "cover_img" : "https://images.unsplash.com/photo-1676299081847-824916de030a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         "author_img" : "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2080&q=80",
-        "read_time" : "08 min read",
+        "read_time" : 18,
         "published" : "Mar 14 (4 Days ago)"
 
     }
