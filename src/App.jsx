@@ -10,6 +10,14 @@ import { useState } from 'react';
 function App() {
   const [readingTime, setReadingTime] = useState("");
 
+  const [blogInfo, setBlogInfo] = useState ([]);
+
+   const blogCount = (blog) =>{
+        const newBlog = [...blogInfo, blog]
+        setBlogInfo(newBlog)
+    }
+
+
   const handleReadTime = (time)=>{
     const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
     if (previousReadTime){
@@ -28,10 +36,10 @@ function App() {
       <Header>  </Header>
       <div className='main flex flex-col md:flex-row'>
         <div className="blogs-container mx-auto">
-          <Blogs handleReadTime={handleReadTime}></Blogs>
+          <Blogs handleReadTime={handleReadTime} blogCount ={blogCount}></Blogs>
         </div >
         <div className="side-pannel mx-auto">
-<SidePannel readingTime = {readingTime}></SidePannel>
+<SidePannel readingTime = {readingTime} blogInfo ={blogInfo}></SidePannel>
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
 import React from 'react';
 
-const SingleBlog = ({blog, handleReadTime}) => {
+const SingleBlog = ({blog, handleReadTime, blogCount}) => {
     
+   
     return (
         <div>
             <div className="card w-full md:w-3/4 lg:w-3/4 bg-base-100 shadow-xl mt-12">
@@ -18,7 +19,7 @@ const SingleBlog = ({blog, handleReadTime}) => {
         </div>
         <div className='flex gap-2'>
             <p className='mt-8'>{blog.read_time} min read</p>
-            <button>
+            <button onClick={() => blogCount(blog)}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="hover:bg-violet-600 w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
 </svg>
