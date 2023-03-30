@@ -4,7 +4,7 @@ const SingleBlog = ({blog}) => {
     
     return (
         <div>
-            <div className="card w-3/5 bg-base-100 shadow-xl mt-12">
+            <div className="card w-full md:w-3/5 lg:w-3/5 bg-base-100 shadow-xl mt-12">
   <figure><img src={blog.cover_img} alt="Shoes" /></figure>
   <div className="card-body">
     <div>
@@ -27,6 +27,8 @@ const SingleBlog = ({blog}) => {
         </div>
     </div>
   </div>
+<h1 className='font-bold text-4xl py-8 px-6 mb-4'>{blog.blog_title}</h1>
+<button className="left-0 btn btn-active btn-link">Mark as read</button>
 </div>
         </div>
     );

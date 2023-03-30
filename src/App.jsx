@@ -12,11 +12,11 @@ function App() {
   return (
     <div className="App">
       <Header>  </Header>
-      <div className='main flex justify-between'>
-        <div className="blogs-container ml-40">
+      <div className='main flex flex-col md:flex-row'>
+        <div className="blogs-container mx-auto">
           <Blogs></Blogs>
         </div >
-        <div className="side-pannel mr-40">
+        <div className="side-pannel mx-auto">
 <SidePannel></SidePannel>
         </div>
       </div>
