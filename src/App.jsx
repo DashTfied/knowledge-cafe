@@ -5,16 +5,21 @@ import './App.css'
 import Header from './Components/Header/Header'
 import Blogs from './Components/Blogs/Blogs'
 import SidePannel from './Components/Sidepannel/SidePannel'
+import { useState } from 'react';
 
 function App() {
+  const [readingTime, setReadingTime] = useState("");
+
   const handleReadTime = (time)=>{
     const previousReadTime = JSON.parse(localStorage.getItem("readTime"));
     if (previousReadTime){
       const newTime = previousReadTime + time;
-    localStorage.setItem("readTime", newTime)  
+    localStorage.setItem("readTime", newTime) 
+    setReadingTime(newTime);
   }
     else{
       localStorage.setItem("readTime", time)
+      setReadingTime(time);
     }
   }
 
@@ -26,7 +31,7 @@ function App() {
           <Blogs handleReadTime={handleReadTime}></Blogs>
         </div >
         <div className="side-pannel mx-auto">
-<SidePannel></SidePannel>
+<SidePannel readingTime = {readingTime}></SidePannel>
         </div>
       </div>
     </div>
