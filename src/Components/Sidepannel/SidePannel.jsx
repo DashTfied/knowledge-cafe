@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-const SidePannel = ({ readingTime , blogInfo}) => {
+const SidePannel = ({ readingTime , blogInfo, }) => {
     const [time, setTime] = useState (readingTime)
+   
+    
+
+    
     
 
     useEffect(()=>{
@@ -17,7 +21,9 @@ const SidePannel = ({ readingTime , blogInfo}) => {
                 <hr />
                 <h2 className='font-bold text-xl mt-12'>Bookmarked Blogs :  {blogInfo.length}</h2>
                 <hr />
-                
+                {
+                    blogInfo.map((blog) => (<p className='font-bold text-xl border-2 rounded-xl border-purple-800 bg-purple-100 px-10 py-8 my-8'> {blog.blog_title}</p>))
+                }
             </div>
             
         </div>

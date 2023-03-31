@@ -14,16 +14,18 @@ function App() {
   const [readingTime, setReadingTime] = useState("");
 
   const [blogInfo, setBlogInfo] = useState ([]);
+  
 
    const blogCount = (blog) =>{
         const newBlog = [...blogInfo, blog]
-        if (newBlog){
-          toast("You Have Already Bookmarked This Blog!")
+        if (!newBlog){
           setBlogInfo(newBlog)
         }
         else{
+          toast("You Have Already Bookmarked This Blog!")
         setBlogInfo(newBlog)
         }
+        
     }
 
 
@@ -43,12 +45,12 @@ function App() {
   return (
     <div className="App">
       <Header>  </Header>
-      <div className='main flex flex-col md:flex-row'>
+      <div className='main flex flex-col md:flex-row md:max-w-screen-xl mx-auto'>
         <div className="blogs-container mx-auto">
           <Blogs handleReadTime={handleReadTime} blogCount ={blogCount}></Blogs>
         </div >
         <div className="side-pannel mx-auto">
-<SidePannel readingTime = {readingTime} blogInfo ={blogInfo}></SidePannel>
+<SidePannel readingTime = {readingTime} blogInfo ={blogInfo} ></SidePannel>
         </div>
       </div>
 <ToastContainer></ToastContainer>
